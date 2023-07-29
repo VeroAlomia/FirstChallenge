@@ -9,15 +9,14 @@ class  TestMergeArrays(unittest.TestCase):
        self.testObj = Solution()
 
     def test_zero(self):
-        v1 = [[]]
-        v2 = [[]]
-        self.assertEqual(self.testObj.mergeArrays(v1,v2),[[]])
+        v1 = []
+        v2 = []
+        self.assertEqual(self.testObj.mergeArrays(v1,v2),[])
 
     def test_diffzero(self):
         v1 = [[2,3]]
-        v2 = [[]]
+        v2 = []
         self.assertEqual(self.testObj.mergeArrays(v1,v2),[[2,3]])
-    
     
     def test_sum(self):
         v1 = [[5,7]]
